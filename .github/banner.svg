@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a"/>
+      <stop offset="50%" style="stop-color:#0d1b2a"/>
+      <stop offset="100%" style="stop-color:#1b2838"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00C853"/>
+      <stop offset="100%" style="stop-color:#69F0AE"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00C853;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#00C853;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" rx="12" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.04" stroke="white" stroke-width="0.5">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="200" y1="0" x2="200" y2="300"/>
+    <line x1="400" y1="0" x2="400" y2="300"/>
+    <line x1="600" y1="0" x2="600" y2="300"/>
+    <line x1="800" y1="0" x2="800" y2="300"/>
+    <line x1="1000" y1="0" x2="1000" y2="300"/>
+  </g>
+
+  <!-- Video stream icon -->
+  <g transform="translate(90, 85)">
+    <!-- Outer frame -->
+    <rect x="0" y="10" width="120" height="80" rx="8" stroke="url(#accent)" stroke-width="2.5" fill="none" opacity="0.8"/>
+    <!-- Play triangle -->
+    <polygon points="45,35 45,75 80,55" fill="url(#accent)" opacity="0.7"/>
+    <!-- Signal waves -->
+    <path d="M130 30 Q145 50, 130 70" stroke="url(#accent)" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M140 20 Q160 50, 140 80" stroke="url(#accent)" stroke-width="2" fill="none" opacity="0.35"/>
+    <path d="M150 10 Q175 50, 150 90" stroke="url(#accent)" stroke-width="2" fill="none" opacity="0.2"/>
+    <!-- Glow -->
+    <rect x="-10" y="0" width="140" height="100" rx="12" fill="url(#glow)"/>
+  </g>
+
+  <!-- Title -->
+  <text x="300" y="118" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="52" font-weight="700" fill="white" letter-spacing="-1">
+    swift-<tspan fill="url(#accent)">av1</tspan>-rtp
+  </text>
+
+  <!-- Subtitle -->
+  <text x="300" y="163" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif" font-size="21" fill="#8892b0" font-weight="400">
+    Pure Swift AV1 RTP depacketizer for iOS, macOS, and tvOS
+  </text>
+
+  <!-- Feature pills -->
+  <g transform="translate(300, 190)">
+    <rect x="0" y="0" width="80" height="30" rx="15" fill="#00C853" opacity="0.15"/>
+    <text x="40" y="20" font-family="-apple-system, BlinkMacSystemFont, 'SF Mono', monospace" font-size="12" fill="#00C853" text-anchor="middle" font-weight="500">AV1</text>
+
+    <rect x="95" y="0" width="70" height="30" rx="15" fill="#00C853" opacity="0.15"/>
+    <text x="130" y="20" font-family="-apple-system, BlinkMacSystemFont, 'SF Mono', monospace" font-size="12" fill="#00C853" text-anchor="middle" font-weight="500">RTP</text>
+
+    <rect x="180" y="0" width="130" height="30" rx="15" fill="#00C853" opacity="0.15"/>
+    <text x="245" y="20" font-family="-apple-system, BlinkMacSystemFont, 'SF Mono', monospace" font-size="12" fill="#00C853" text-anchor="middle" font-weight="500">VideoToolbox</text>
+
+    <rect x="325" y="0" width="80" height="30" rx="15" fill="#00C853" opacity="0.15"/>
+    <text x="365" y="20" font-family="-apple-system, BlinkMacSystemFont, 'SF Mono', monospace" font-size="12" fill="#00C853" text-anchor="middle" font-weight="500">SPM</text>
+
+    <rect x="420" y="0" width="110" height="30" rx="15" fill="#00C853" opacity="0.15"/>
+    <text x="475" y="20" font-family="-apple-system, BlinkMacSystemFont, 'SF Mono', monospace" font-size="12" fill="#00C853" text-anchor="middle" font-weight="500">Zero-dep</text>
+
+    <rect x="545" y="0" width="120" height="30" rx="15" fill="#00C853" opacity="0.15"/>
+    <text x="605" y="20" font-family="-apple-system, BlinkMacSystemFont, 'SF Mono', monospace" font-size="12" fill="#00C853" text-anchor="middle" font-weight="500">AOMedia spec</text>
+  </g>
+
+  <!-- Swift bird silhouette -->
+  <g transform="translate(1050, 40)" opacity="0.06">
+    <path d="M120 20C100 40 60 70 30 85C50 75 75 60 95 40C70 65 35 85 10 95C40 90 70 80 95 60C75 80 45 100 20 110C55 105 85 90 110 70C95 90 70 110 50 120C80 115 105 100 120 80Z" fill="white" transform="scale(1.5)"/>
+  </g>
+</svg>
