@@ -7,3 +7,6 @@ DerivedData/
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
 .netrc
 Package.resolved
+create-fixtures.swift
+demo-keyframe.bin
+demo-interframe.bin

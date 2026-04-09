@@ -19,6 +19,14 @@
 
 ---
 
+<p align="center">
+  <img src="demo.gif" alt="swift-av1-rtp Demo — av1dump CLI parsing AV1 RTP payloads" width="100%">
+  <br>
+  <sub>av1dump parsing keyframe (Sequence Header + Frame) and interframe RTP payloads</sub>
+</p>
+
+---
+
 ## What is this?
 
 `swift-av1-rtp` depacketizes AV1 video from RTP streams per the [AOMedia AV1 RTP Payload Format v1.0.0](https://aomediacodec.github.io/av1-rtp-spec/). It extracts OBU (Open Bitstream Unit) elements from RTP packets, reassembles fragmented frames, and outputs complete temporal units ready for hardware decode via Apple's VideoToolbox.
